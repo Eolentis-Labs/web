@@ -27,6 +27,7 @@
 
       <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-300">
         <a href="#product" class="hover:text-white">Product</a>
+        <a href="#why" class="hover:text-white">Why Eolentis</a>
         <a href="#how" class="hover:text-white">How it works</a>
         <a href="#security" class="hover:text-white">Security</a>
         <a href="#integrations" class="hover:text-white">Integrations</a>
@@ -185,6 +186,73 @@ if (!isValidCustomerType(req.customerType)) {
     </div>
   </section>
 
+  <!-- Why Eolentis (Differentiation) -->
+  <section id="why" class="relative z-10 border-t border-white/5">
+    <div class="mx-auto max-w-6xl px-6 py-16">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+        <div>
+          <h2 class="text-3xl font-semibold tracking-tight">Why Eolentis</h2>
+          <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
+            Many tools can comment on code. Eolentis is built to deliver <span class="text-white">high-signal</span> review in
+            <span class="text-white">regulated, interconnected</span> codebases, where you need traceability, not vibes.
+          </p>
+        </div>
+        <div class="text-sm text-zinc-400 lg:text-right">
+          <div class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 px-4 py-3">
+            <span class="text-zinc-200 font-medium">Positioning:</span> Audit-ready AI governance for PRs
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">Diff-first by design</div>
+          <div class="mt-2 text-zinc-400 text-sm">
+            Reviews what changed and what it impacts. No repo-wide essays. Less noise, faster approvals.
+          </div>
+        </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">Confidence, not authority</div>
+          <div class="mt-2 text-zinc-400 text-sm">
+            Every finding includes certainty and what to verify when context is incomplete. No “AI said so”.
+          </div>
+        </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">Traceable to your sources</div>
+          <div class="mt-2 text-zinc-400 text-sm">
+            Findings map back to guidelines, ADRs, and policies, enabling audit-friendly decisions.
+          </div>
+        </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">Regulated-first deployments</div>
+          <div class="mt-2 text-zinc-400 text-sm">
+            Runs behind VPN and on-prem with optional local models. Built for bank-grade constraints.
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 grid lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-7 rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">High-signal review, not generic checklists</div>
+          <p class="mt-3 text-zinc-400 text-sm leading-relaxed">
+            Best practices are applied in two layers: universal engineering standards (security, error handling, validation,
+            backward compatibility, performance, readability) plus your internal rules (coding standards, ADRs, compliance docs).
+            The bot explains <span class="text-zinc-200">why each point matters here</span>, in this diff, for this change.
+          </p>
+        </div>
+        <div class="lg:col-span-5 rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">What teams typically measure</div>
+          <ul class="mt-3 space-y-2 text-zinc-400 text-sm list-disc list-inside">
+            <li>Review cycle time (time to approval)</li>
+            <li>Policy violations caught pre-merge</li>
+            <li>Reduction in “review noise” comments</li>
+            <li>Production incidents linked to missed checks</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- How it works -->
   <section id="how" class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
@@ -336,7 +404,7 @@ if (!isValidCustomerType(req.customerType)) {
         </div>
 
         <div class="mt-6 text-xs text-zinc-400">
-          © <span id="year"></span> Eolentis Labs. All rights reserved.
+          © <span id="year"></span> Eolentis labs s.r.o. All rights reserved.
         </div>
       </div>
     </div>
