@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Eolentis Labs | AI for Regulated Engineering Teams</title>
-  <meta name="description" content="Diff-first AI pull request review and autonomous coding agents for regulated engineering teams. High-signal feedback, RAG-grounded context, audit-ready traceability."/>
+  <title>Eolentis Labs | AI Agent Platform for Engineering Teams</title>
+  <meta name="description" content="AI coding agents and PR review for engineering teams. Local or cloud execution, RAG-grounded chat, three-phase planning, multi-LLM, full audit trail. Built for regulated environments."/>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body class="bg-zinc-950 text-zinc-100 antialiased">
+
   <!-- Top glow -->
   <div class="pointer-events-none fixed inset-0 overflow-hidden">
     <div class="absolute -top-40 left-1/2 h-[520px] w-[920px] -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500/20 via-fuchsia-500/20 to-cyan-500/20 blur-3xl"></div>
@@ -21,18 +22,18 @@
         <div class="h-9 w-9 rounded-xl bg-zinc-900 ring-1 ring-white/10 flex items-center justify-center font-semibold">E</div>
         <div class="leading-tight">
           <div class="font-semibold">Eolentis Labs</div>
-          <div class="text-xs text-zinc-400">AI for regulated engineering teams</div>
+          <div class="text-xs text-zinc-400">AI agent platform for engineering teams</div>
         </div>
       </div>
 
       <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-300">
-        <a href="#products" class="hover:text-white">Products</a>
-        <a href="#why" class="hover:text-white">Why Eolentis</a>
+        <a href="#platform" class="hover:text-white">Platform</a>
+        <a href="#agents" class="hover:text-white">Agent nodes</a>
+        <a href="#review" class="hover:text-white">Review Bot</a>
+        <a href="#rag" class="hover:text-white">RAG &amp; Chat</a>
         <a href="#how" class="hover:text-white">How it works</a>
         <a href="#security" class="hover:text-white">Security</a>
-        <a href="#integrations" class="hover:text-white">Integrations</a>
         <a href="#pricing" class="hover:text-white">Pricing</a>
-        <a href="#faq" class="hover:text-white">FAQ</a>
       </nav>
 
       <div class="flex items-center gap-6">
@@ -53,405 +54,465 @@
         <div class="lg:col-span-7">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 ring-1 ring-white/10 text-xs text-zinc-300">
             <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
-            AI platform for regulated engineering teams
+            Live — agent platform + PR review bot
           </div>
 
           <h1 class="mt-5 text-4xl sm:text-5xl font-semibold tracking-tight">
-            AI that enforces your rules, not generic advice.
+            Autonomous coding agents and PR review, grounded in your codebase.
           </h1>
 
           <p class="mt-5 text-lg text-zinc-300 leading-relaxed">
-            From <span class="text-white">PR review</span> to <span class="text-white">autonomous coding agents</span> — Eolentis brings high-signal, RAG-grounded AI to complex, regulated codebases where mistakes are expensive and traceability is non-negotiable.
+            Eolentis runs <span class="text-white">AI coding agents</span> directly on your machine or in cloud sandboxes, reviews pull requests via <span class="text-white">CI integration</span>, and answers questions about your code with <span class="text-white">RAG-grounded chat</span> — all traceable to your internal docs and policies.
           </p>
 
           <div class="mt-8 flex flex-col sm:flex-row gap-3">
             <a id="demo" href="#contact" class="inline-flex justify-center px-5 py-3 rounded-xl bg-white text-zinc-900 hover:bg-zinc-200 font-medium">
               Request a demo
             </a>
-            <a href="#products" class="inline-flex justify-center px-5 py-3 rounded-xl bg-zinc-900 ring-1 ring-white/10 hover:bg-zinc-800 text-zinc-100">
-              See what we build
+            <a href="#platform" class="inline-flex justify-center px-5 py-3 rounded-xl bg-zinc-900 ring-1 ring-white/10 hover:bg-zinc-800 text-zinc-100">
+              See how it works
             </a>
           </div>
 
           <div class="mt-8 grid sm:grid-cols-3 gap-4 text-sm">
             <div class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4">
-              <div class="font-medium">Must fix / Should fix / Nit</div>
-              <div class="text-zinc-400 mt-1">Prioritized, structured output with line-level links.</div>
+              <div class="font-medium">Local &amp; cloud agents</div>
+              <div class="text-zinc-400 mt-1">Run tasks on your machine or in ephemeral E2B sandboxes. You choose per task.</div>
             </div>
             <div class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4">
               <div class="font-medium">RAG-grounded context</div>
-              <div class="text-zinc-400 mt-1">Decisions rooted in your ADRs, policies, and codebase — not hallucinations.</div>
+              <div class="text-zinc-400 mt-1">Decisions rooted in your ADRs, Confluence docs, and codebase — not hallucinations.</div>
             </div>
             <div class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4">
-              <div class="font-medium">Audit-ready traceability</div>
-              <div class="text-zinc-400 mt-1">Every finding and agent action tied to internal rules and policy sources.</div>
+              <div class="font-medium">Full audit trail</div>
+              <div class="text-zinc-400 mt-1">Every agent step, tool call, and cost logged. Per-step token usage and USD cost visible throughout.</div>
             </div>
           </div>
         </div>
 
-        <!-- Mock UI -->
+        <!-- Terminal mock -->
         <div class="lg:col-span-5">
           <div class="rounded-3xl bg-zinc-900 ring-1 ring-white/10 overflow-hidden">
-            <div class="p-4 border-b border-white/10 flex items-center justify-between">
-              <div class="text-sm text-zinc-300">PR Review</div>
-              <div class="text-xs text-zinc-500">GitHub / GitLab / Azure DevOps</div>
+            <div class="px-4 py-3 border-b border-white/10 flex items-center gap-2">
+              <div class="h-3 w-3 rounded-full bg-zinc-700"></div>
+              <div class="h-3 w-3 rounded-full bg-zinc-700"></div>
+              <div class="h-3 w-3 rounded-full bg-zinc-700"></div>
+              <span class="ml-3 text-xs text-zinc-500 font-mono">agent run • payment-error-handling</span>
             </div>
-            <div class="p-4 space-y-3 text-sm">
-              <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-4">
-                <div class="flex items-center justify-between">
-                  <div class="font-medium text-rose-300">Must fix</div>
-                  <div class="text-xs text-zinc-500">High confidence</div>
-                </div>
-                <div class="mt-2 text-zinc-200">
-                  Input validation bypass in <span class="text-white">PaymentRequestMapper</span> when <span class="text-white">customerType=VIP</span>.
-                </div>
-                <div class="mt-2 text-zinc-400">
-                  File: <span class="text-zinc-200">src/payments/mapper.ts</span> • Lines: <span class="text-zinc-200">+42..+58</span>
-                </div>
-                <pre class="mt-3 text-xs text-zinc-300 bg-zinc-950/80 rounded-xl p-3 overflow-auto"><code>// Suggested patch
-if (!isValidCustomerType(req.customerType)) {
-  throw new ValidationError("Invalid customerType");
-}</code></pre>
+            <div class="p-4 space-y-2 font-mono text-xs">
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-indigo-400 w-16 shrink-0">plan</span>
+                <span>complexity=medium → budget=25 steps</span>
               </div>
-
-              <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-4">
-                <div class="flex items-center justify-between">
-                  <div class="font-medium text-amber-300">Should fix</div>
-                  <div class="text-xs text-zinc-500">Medium confidence</div>
-                </div>
-                <div class="mt-2 text-zinc-200">
-                  Potential backward-compat issue: renamed field <span class="text-white">iban</span> to <span class="text-white">accountIban</span>.
-                </div>
-                <div class="mt-2 text-zinc-400">
-                  Needs verification: downstream API contract &amp; consumer services.
-                </div>
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-sky-400 w-16 shrink-0">rag</span>
+                <span>"payment service error handling patterns"</span>
               </div>
-
-              <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-4">
-                <div class="flex items-center justify-between">
-                  <div class="font-medium text-sky-300">Nit</div>
-                  <div class="text-xs text-zinc-500">High confidence</div>
-                </div>
-                <div class="mt-2 text-zinc-200">
-                  Consider extracting helper for repeated mapping logic to improve testability.
-                </div>
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-sky-400 w-16 shrink-0">rag</span>
+                <span>"ADR-041 error response schema"</span>
               </div>
-
-              <div class="text-xs text-zinc-500">
-                Example UI only. Real output includes direct diff links and references to internal guidelines/ADRs when available.
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-emerald-400 w-16 shrink-0">read</span>
+                <span>src/payments/handler.ts</span>
+              </div>
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-emerald-400 w-16 shrink-0">write</span>
+                <span>src/payments/handler.ts</span>
+              </div>
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-emerald-400 w-16 shrink-0">write</span>
+                <span>src/payments/handler.test.ts</span>
+              </div>
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-amber-400 w-16 shrink-0">run</span>
+                <span>npx jest src/payments --no-coverage</span>
+              </div>
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-amber-400 w-16 shrink-0">result</span>
+                <span class="text-emerald-300">Tests: 14 passed, 14 total</span>
+              </div>
+              <div class="flex items-start gap-3 text-zinc-400">
+                <span class="text-indigo-400 w-16 shrink-0">review</span>
+                <span>self-review pass — diff looks correct</span>
+              </div>
+              <div class="flex items-start gap-3 text-zinc-200">
+                <span class="text-fuchsia-400 w-16 shrink-0">done</span>
+                <span>feat/payment-error-handling • 11 steps • $0.007</span>
+              </div>
+              <div class="mt-3 pt-3 border-t border-white/10 flex justify-between text-zinc-500">
+                <span>agent node: David's Mac (local)</span>
+                <span>gpt-4o-mini exec · gpt-4o review</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Credibility strip -->
-      <div class="mt-10 rounded-3xl bg-zinc-900/40 ring-1 ring-white/10 p-6">
-        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-          <div>
-            <div class="text-sm text-zinc-300 font-medium">Built for regulated engineering teams</div>
-            <div class="mt-1 text-sm text-zinc-400">
-              Pilot-ready with your ADRs, coding guidelines, and compliance policies. No logo theatre until we've earned it.
-            </div>
-          </div>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs text-zinc-400">
-            <div class="rounded-2xl bg-zinc-950/40 ring-1 ring-white/10 px-4 py-3">
-              <div class="text-zinc-200 font-medium">High signal</div>
-              <div>Diff-first review</div>
-            </div>
-            <div class="rounded-2xl bg-zinc-950/40 ring-1 ring-white/10 px-4 py-3">
-              <div class="text-zinc-200 font-medium">RAG-grounded</div>
-              <div>Your docs &amp; rules</div>
-            </div>
-            <div class="rounded-2xl bg-zinc-950/40 ring-1 ring-white/10 px-4 py-3">
-              <div class="text-zinc-200 font-medium">Deployable</div>
-              <div>On-prem / behind VPN</div>
-            </div>
-            <div class="rounded-2xl bg-zinc-950/40 ring-1 ring-white/10 px-4 py-3">
-              <div class="text-zinc-200 font-medium">Actionable</div>
-              <div>Patches + confidence</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- Products overview -->
-  <section id="products" class="relative z-10 border-t border-white/5">
+  <!-- Platform overview -->
+  <section id="platform" class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
-      <h2 class="text-3xl font-semibold tracking-tight">Two products, one platform</h2>
+      <h2 class="text-3xl font-semibold tracking-tight">One platform, three capabilities</h2>
       <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-        Eolentis combines autonomous code review with autonomous code execution — both grounded in your internal knowledge and built for environments where auditability matters.
+        Eolentis brings autonomous agents, PR review, and codebase chat together in a single multi-tenant platform — all grounded in the same RAG layer built from your internal docs.
       </p>
 
-      <div class="mt-10 grid lg:grid-cols-2 gap-6">
-        <!-- Review Bot card -->
+      <div class="mt-10 grid lg:grid-cols-3 gap-6">
+        <!-- Agent Platform -->
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-8">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800 ring-1 ring-white/10 text-xs text-zinc-300 mb-4">
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            Live
+          </div>
+          <div class="text-xl font-semibold">Agent Platform</div>
+          <p class="mt-3 text-zinc-400 leading-relaxed text-sm">
+            Assign tasks to AI agents running on your machine or in cloud sandboxes. The agent plans, writes code, runs tests, and produces a commit — all traceable.
+          </p>
+          <ul class="mt-4 space-y-2 text-zinc-400 text-sm">
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Projects → Sessions → Tasks hierarchy</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Three-phase loop: plan / execute / self-review</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Local agent daemon + cloud E2B sandboxes</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Self-healing: failed tasks auto-spawn fix tasks</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Per-step cost breakdown in USD</li>
+          </ul>
+        </div>
+
+        <!-- Review Bot -->
         <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-8">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800 ring-1 ring-white/10 text-xs text-zinc-300 mb-4">
             <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
             Live
           </div>
           <div class="text-xl font-semibold">Review Bot</div>
-          <p class="mt-3 text-zinc-400 leading-relaxed">
-            Pre-reviews every pull request before a human opens it. Diff-first analysis, RAG-retrieved context, and findings traceable to your internal rules and ADRs.
+          <p class="mt-3 text-zinc-400 leading-relaxed text-sm">
+            Reviews every PR before a human opens it. Triggered from Jenkins CI, diff-first, grounded in your ADRs and policies. Also enforces coverage thresholds automatically.
           </p>
           <ul class="mt-4 space-y-2 text-zinc-400 text-sm">
             <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Must fix / Should fix / Nit with line-level links</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Confidence per finding + explicit what-to-verify</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Suggested patches, not vague advice</li>
-            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Findings mapped back to your ADRs and policies</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Jenkins + GitHub / GitLab / Azure DevOps / Bitbucket</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Coverage gate: flags files below threshold</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Memory mode: learns from past PRs over time</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Incremental reviews on PR updates</li>
           </ul>
-          <div class="mt-6">
-            <a href="#product" class="text-sm text-zinc-300 hover:text-white underline underline-offset-4">See full Review Bot details →</a>
-          </div>
         </div>
 
-        <!-- Agent Platform card -->
+        <!-- RAG Chat -->
         <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-8">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800 ring-1 ring-white/10 text-xs text-zinc-300 mb-4">
-            <span class="h-2 w-2 rounded-full bg-amber-400"></span>
-            In development
+            <span class="h-2 w-2 rounded-full bg-emerald-400"></span>
+            Live
           </div>
-          <div class="text-xl font-semibold">Agent Platform</div>
-          <p class="mt-3 text-zinc-400 leading-relaxed">
-            Autonomous coding agents that plan, write, and validate changes in a sandboxed environment — with cost tracking, RAG context, and full step-level auditability.
+          <div class="text-xl font-semibold">RAG Chat</div>
+          <p class="mt-3 text-zinc-400 leading-relaxed text-sm">
+            A chat interface over your indexed codebase and documentation. Ask questions, get streaming answers grounded in real sources — from ADRs to Confluence pages to code.
           </p>
           <ul class="mt-4 space-y-2 text-zinc-400 text-sm">
-            <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">✓</span> Multi-step planning with complexity-aware budgets</li>
-            <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">✓</span> RAG-grounded context from your docs and codebase</li>
-            <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">✓</span> Per-step and total USD cost visibility</li>
-            <li class="flex items-start gap-2"><span class="text-amber-400 mt-0.5">✓</span> Sandbox execution with structured commit output</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Per-project knowledge base (Qdrant vector store)</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Streaming answers with RAG source disclosure</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Thread context summarization for long conversations</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Can spawn tasks directly from chat</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Per-message and per-thread cost tracking</li>
           </ul>
-          <div class="mt-6">
-            <a href="#agent" class="text-sm text-zinc-300 hover:text-white underline underline-offset-4">See Agent Platform details →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agent Nodes deep dive -->
+  <section id="agents" class="relative z-10 border-t border-white/5">
+    <div class="mx-auto max-w-6xl px-6 py-16">
+      <h2 class="text-3xl font-semibold tracking-tight">Agent nodes: local or cloud</h2>
+      <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
+        You pick where the agent runs — on your machine with direct filesystem access, or in an ephemeral cloud sandbox. Both modes share the same task queue and UI.
+      </p>
+
+      <div class="mt-10 grid lg:grid-cols-2 gap-6">
+        <!-- Local agent -->
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-8 w-8 rounded-lg bg-zinc-800 ring-1 ring-white/10 flex items-center justify-center text-sm">💻</div>
+            <div class="text-xl font-semibold">Local Agent Daemon</div>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+            Register your machine in the UI, download the generated installer script, run it. The daemon connects to the shared Redis queue and picks up tasks assigned to your node — working directly on your local filesystem without cloning or sandboxing.
+          </p>
+
+          <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-4 font-mono text-xs space-y-1 mb-5">
+            <div class="text-zinc-500"># One-time setup</div>
+            <div class="text-zinc-300">node install.js   <span class="text-zinc-500"># downloaded from UI</span></div>
+            <div class="text-zinc-300">npx tsx workers/daemon/index.ts</div>
+            <div class="text-zinc-500 mt-2"># Node appears online in UI within seconds</div>
+          </div>
+
+          <ul class="space-y-2 text-zinc-400 text-sm">
+            <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">→</span> Works directly on your local files — no git clone</li>
+            <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">→</span> Dedicated queue per node — tasks never leak to other agents</li>
+            <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">→</span> REPO_MAPPINGS maps repo names to explicit local paths</li>
+            <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">→</span> Heartbeat every 30 s — node shows online/offline in real time</li>
+            <li class="flex items-start gap-2"><span class="text-sky-400 mt-0.5">→</span> Use any local LLM (Ollama, LM Studio) to keep code on-prem</li>
+          </ul>
+        </div>
+
+        <!-- Cloud agent -->
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-8">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-8 w-8 rounded-lg bg-zinc-800 ring-1 ring-white/10 flex items-center justify-center text-sm">☁️</div>
+            <div class="text-xl font-semibold">Cloud Worker (E2B)</div>
+          </div>
+          <p class="text-zinc-400 text-sm leading-relaxed mb-5">
+            Cloud workers run tasks in ephemeral E2B sandboxes. They clone the repository using the tenant's stored GitHub token, run the agent, commit results, and push to a new branch — without touching any local filesystem.
+          </p>
+
+          <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-4 font-mono text-xs space-y-1 mb-5">
+            <div class="text-zinc-500"># Scale with PM2</div>
+            <div class="text-zinc-300">pm2 start agent-worker.ts -i 3</div>
+            <div class="text-zinc-500 mt-2"># 3 workers share the same Redis queue</div>
+            <div class="text-zinc-500"># Tasks distributed automatically</div>
+          </div>
+
+          <ul class="space-y-2 text-zinc-400 text-sm">
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-0.5">→</span> Ephemeral E2B sandbox per task — fully isolated</li>
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-0.5">→</span> Clones repo, runs agent, pushes branch automatically</li>
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-0.5">→</span> Git token stored per-tenant in the database</li>
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-0.5">→</span> Scale horizontally — multiple workers, shared queue</li>
+            <li class="flex items-start gap-2"><span class="text-fuchsia-400 mt-0.5">→</span> Can be toggled per tenant from Settings</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Three-phase agent loop -->
+      <div class="mt-8 rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-8">
+        <div class="text-xl font-semibold mb-2">Three-phase agent loop</div>
+        <p class="text-zinc-400 text-sm leading-relaxed mb-6">
+          Each task goes through three independent phases, each configurable with its own LLM. Use a powerful model for planning, a fast cheap model for the mechanical execution loop, and a balanced model for the final self-review.
+        </p>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-5">
+            <div class="text-sm font-medium text-indigo-300 mb-2">Phase 1 — Planning</div>
+            <p class="text-zinc-400 text-xs leading-relaxed">Analyzes the task, estimates complexity (low / medium / high), sets a step budget, and identifies which files to read or create. Also drives self-healing if a prior task failed.</p>
+            <div class="mt-3 font-mono text-xs text-zinc-500">LLM_MODEL_PLANNING=claude-opus-4-6</div>
+          </div>
+          <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-5">
+            <div class="text-sm font-medium text-emerald-300 mb-2">Phase 2 — Execution</div>
+            <p class="text-zinc-400 text-xs leading-relaxed">Tool-call loop: readFile, writeFile, patchFile, runCommand. RAG queries happen here. Runs until all checks pass or the step budget is exhausted.</p>
+            <div class="mt-3 font-mono text-xs text-zinc-500">LLM_MODEL_EXECUTION=gpt-4o-mini</div>
+          </div>
+          <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-5">
+            <div class="text-sm font-medium text-fuchsia-300 mb-2">Phase 3 — Self-review</div>
+            <p class="text-zinc-400 text-xs leading-relaxed">Reviews the final diff before completing. Produces a structured commit: branch name, title, body, and task summary ready to open a PR.</p>
+            <div class="mt-3 font-mono text-xs text-zinc-500">LLM_MODEL_REVIEW=gpt-4o</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Review Bot detail -->
-  <section id="product" class="relative z-10 border-t border-white/5">
+  <!-- Review Bot deep dive -->
+  <section id="review" class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
-      <h2 class="text-3xl font-semibold tracking-tight">Review Bot, built for enterprise reality</h2>
+      <h2 class="text-3xl font-semibold tracking-tight">Review Bot — CI-integrated PR review</h2>
       <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-        The bot reviews pull requests primarily as a <span class="text-white">diff</span>. It fetches only the minimal, targeted context
-        required to understand and validate a change — using RAG to retrieve relevant ADRs, guidelines, and codebase context on demand. Less noise, fewer hallucinations, more actionable feedback.
-      </p>
-
-      <div class="mt-10 grid md:grid-cols-3 gap-6">
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Diff-first focus</div>
-          <div class="mt-2 text-zinc-400">Reviews changed lines and their immediate impact, not the entire repo.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">RAG context retrieval</div>
-          <div class="mt-2 text-zinc-400">Retrieves definitions, interfaces, ADRs, and policies only when needed — grounding findings in your actual knowledge base.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Rules + ADRs + internal policies</div>
-          <div class="mt-2 text-zinc-400">Applies organization-specific best practices with "why here, why now".</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Structured output</div>
-          <div class="mt-2 text-zinc-400">Must fix / Should fix / Nit with line-level references and impact tags.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Patch-level suggestions</div>
-          <div class="mt-2 text-zinc-400">Provides diffs/snippets, not vague advice you have to interpret.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Confidence & verification</div>
-          <div class="mt-2 text-zinc-400">Explicit certainty per finding and what must be checked if context is incomplete.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Agent Platform detail -->
-  <section id="agent" class="relative z-10 border-t border-white/5">
-    <div class="mx-auto max-w-6xl px-6 py-16">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 ring-1 ring-white/10 text-xs text-zinc-300 mb-6">
-        <span class="h-2 w-2 rounded-full bg-amber-400"></span>
-        In development
-      </div>
-      <h2 class="text-3xl font-semibold tracking-tight">Agent Platform</h2>
-      <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-        While Review Bot catches problems before they merge, the Agent Platform goes a step further: it autonomously plans, implements, and validates changes in a sandboxed environment — grounded in the same RAG context, governed by the same rules.
+        Triggered by Jenkins on every PR. Diff-first, RAG-grounded, and structured so findings are actionable — not a wall of text.
       </p>
 
       <div class="mt-10 grid lg:grid-cols-12 gap-6">
-        <div class="lg:col-span-8 space-y-6">
-          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-            <div class="font-medium">Plan → Execute → Validate loop</div>
-            <p class="mt-3 text-zinc-400 text-sm leading-relaxed">
-              The agent starts with a task prompt, estimates complexity (low / medium / high), and dynamically allocates a step budget. It then writes files, runs validations, and calls <code class="text-zinc-200 bg-zinc-800 px-1 rounded">complete()</code> only when all checks pass — producing a structured commit with branch name, title, and body.
-            </p>
-          </div>
-
-          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-            <div class="font-medium">RAG-grounded execution</div>
-            <p class="mt-3 text-zinc-400 text-sm leading-relaxed">
-              Every agent run has access to a RAG query interface. Before writing code, the agent retrieves relevant internal documentation, architectural decisions, and coding standards — ensuring generated code respects your organization's conventions and constraints, not just general best practices.
-            </p>
-          </div>
-
-          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-            <div class="font-medium">Full auditability — step by step</div>
-            <p class="mt-3 text-zinc-400 text-sm leading-relaxed">
-              Every tool call, file write, and decision is captured as a typed <code class="text-zinc-200 bg-zinc-800 px-1 rounded">AgentStep</code>. Each step records its token usage and USD cost, giving you a complete trace from task to commit — suitable for post-hoc review or compliance reporting.
-            </p>
+        <div class="lg:col-span-7 space-y-5">
+          <!-- Review output mock -->
+          <div class="rounded-3xl bg-zinc-900 ring-1 ring-white/10 overflow-hidden">
+            <div class="p-4 border-b border-white/10 flex items-center justify-between">
+              <div class="text-sm text-zinc-300 font-medium">PR Review — feat/payment-mapper-v2</div>
+              <div class="text-xs text-zinc-500">Jenkins · Bitbucket</div>
+            </div>
+            <div class="p-4 space-y-3 text-sm">
+              <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-4">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="font-medium text-rose-300">Must fix</div>
+                  <div class="text-xs text-zinc-500">High confidence</div>
+                </div>
+                <div class="text-zinc-200">Input validation bypass in <span class="text-white font-medium">PaymentRequestMapper</span> when <span class="text-white font-medium">customerType=VIP</span>.</div>
+                <div class="mt-1 text-zinc-400 text-xs">src/payments/mapper.ts · Lines +42..+58 · ADR-019: all external inputs must be validated</div>
+                <pre class="mt-3 text-xs text-zinc-300 bg-zinc-950/80 rounded-xl p-3 overflow-auto"><code>if (!isValidCustomerType(req.customerType)) {
+  throw new ValidationError("Invalid customerType");
+}</code></pre>
+              </div>
+              <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-4">
+                <div class="flex items-center justify-between mb-1">
+                  <div class="font-medium text-amber-300">Should fix</div>
+                  <div class="text-xs text-zinc-500">Medium confidence</div>
+                </div>
+                <div class="text-zinc-200 text-sm">Renamed field <span class="text-white font-medium">iban</span> → <span class="text-white font-medium">accountIban</span> may break downstream consumers.</div>
+                <div class="mt-1 text-zinc-400 text-xs">Verify: payment-consumer-service API contract before merging.</div>
+              </div>
+              <div class="rounded-2xl bg-zinc-950/60 ring-1 ring-white/10 p-4">
+                <div class="flex items-center justify-between mb-1">
+                  <div class="font-medium text-sky-300">Coverage gate</div>
+                  <div class="text-xs text-zinc-500">Auto-triggered</div>
+                </div>
+                <div class="text-zinc-200 text-sm"><span class="text-white font-medium">src/payments/mapper.ts</span> — line coverage 48% (below 60% threshold). New tests required.</div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="lg:col-span-4 space-y-4 text-sm">
-          <div class="rounded-3xl bg-zinc-900 ring-1 ring-white/10 p-5">
-            <div class="text-xs text-zinc-500 mb-3">Agent run trace</div>
-            <div class="space-y-2 font-mono text-xs">
-              <div class="flex items-center gap-2 text-zinc-400">
-                <span class="text-indigo-400">think</span>
-                <span>phase=planning, complexity=medium</span>
+        <div class="lg:col-span-5 space-y-4 text-sm">
+          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+            <div class="font-medium mb-3">What triggers a review</div>
+            <ul class="space-y-2 text-zinc-400 text-sm">
+              <li class="flex items-start gap-2"><span class="text-zinc-500">→</span> <span><span class="text-zinc-200">PR mode</span> — full review posted as a PR comment</span></li>
+              <li class="flex items-start gap-2"><span class="text-zinc-500">→</span> <span><span class="text-zinc-200">Branch mode</span> — review of any branch push, no open PR needed</span></li>
+              <li class="flex items-start gap-2"><span class="text-zinc-500">→</span> <span><span class="text-zinc-200">Incremental</span> — only reviews new commits since last review</span></li>
+              <li class="flex items-start gap-2"><span class="text-zinc-500">→</span> <span><span class="text-zinc-200">Memory update</span> — post-merge mode that updates the bot's knowledge from closed PRs</span></li>
+              <li class="flex items-start gap-2"><span class="text-zinc-500">→</span> <span><span class="text-zinc-200">Coverage gate</span> — called by Jenkins after <code class="text-xs bg-zinc-800 px-1 rounded">npm test --coverage</code>, flags files below threshold</span></li>
+            </ul>
+          </div>
+
+          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+            <div class="font-medium mb-3">Git platform support</div>
+            <div class="space-y-1 text-zinc-400 text-sm">
+              <div>GitHub · GitLab · Azure DevOps · Bitbucket</div>
+              <div class="text-zinc-500 text-xs mt-2">PR identifier format accepted for all four platforms. Always returns HTTP 200 so Jenkins can safely read the JSON response body regardless of review outcome.</div>
+            </div>
+          </div>
+
+          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+            <div class="font-medium mb-3">Jenkins pipeline snippet</div>
+            <pre class="text-xs text-zinc-300 font-mono"><code>stage('AI Review') {
+  steps {
+    sh '''curl -s -X POST \
+      -H "x-internal-secret: $SECRET" \
+      -H "x-tenant-id: $TENANT" \
+      -d '{"mode":"pr","branch":"...",
+           "prUrl":"...","repoSlug":"..."}' \
+      $API_URL/api/review'''
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">Diff-first focus</div>
+          <div class="mt-2 text-zinc-400 text-sm">Reviews the changed lines and their immediate impact. Not the whole repo.</div>
+        </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">RAG context on demand</div>
+          <div class="mt-2 text-zinc-400 text-sm">Retrieves definitions, ADRs, and policies only when needed — grounding findings in your actual knowledge base.</div>
+        </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium">Memory that improves over time</div>
+          <div class="mt-2 text-zinc-400 text-sm">Post-merge memory updates let the bot learn from patterns in your closed PRs — getting more precise with every cycle.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAG & Chat -->
+  <section id="rag" class="relative z-10 border-t border-white/5">
+    <div class="mx-auto max-w-6xl px-6 py-16">
+      <h2 class="text-3xl font-semibold tracking-tight">RAG &amp; Chat — your codebase, answered</h2>
+      <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
+        Index your codebase, Confluence pages, and Jira tickets into per-project Qdrant collections. Then ask questions in natural language, get streaming answers with cited sources, and spawn tasks directly from the conversation.
+      </p>
+
+      <div class="mt-10 grid lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 space-y-5">
+          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+            <div class="font-medium mb-3">What gets indexed</div>
+            <div class="grid sm:grid-cols-3 gap-3 text-sm">
+              <div class="rounded-2xl bg-zinc-950/50 ring-1 ring-white/10 p-4">
+                <div class="text-zinc-200 font-medium mb-1">Codebase</div>
+                <div class="text-zinc-400">Source files indexed by the built-in indexer worker. Configurable per repo, with a file denylist for secrets and generated files.</div>
               </div>
-              <div class="flex items-center gap-2 text-zinc-400">
-                <span class="text-sky-400">rag</span>
-                <span>"payment service error handling"</span>
+              <div class="rounded-2xl bg-zinc-950/50 ring-1 ring-white/10 p-4">
+                <div class="text-zinc-200 font-medium mb-1">Confluence</div>
+                <div class="text-zinc-400">ADRs, wikis, policy pages. Ingestion pipeline fetches and chunks pages into the project's Qdrant collection.</div>
               </div>
-              <div class="flex items-center gap-2 text-zinc-400">
-                <span class="text-emerald-400">writeFile</span>
-                <span>src/payments/handler.ts</span>
-              </div>
-              <div class="flex items-center gap-2 text-zinc-400">
-                <span class="text-emerald-400">writeFile</span>
-                <span>src/payments/handler.test.ts</span>
-              </div>
-              <div class="flex items-center gap-2 text-zinc-400">
-                <span class="text-amber-400">runTests</span>
-                <span>passed 14/14</span>
-              </div>
-              <div class="flex items-center gap-2 text-zinc-200">
-                <span class="text-fuchsia-400">complete</span>
-                <span>feat/payment-error-handling</span>
-              </div>
-              <div class="mt-3 pt-3 border-t border-white/10 text-zinc-500 flex justify-between">
-                <span>12 steps</span>
-                <span>~$0.008</span>
+              <div class="rounded-2xl bg-zinc-950/50 ring-1 ring-white/10 p-4">
+                <div class="text-zinc-200 font-medium mb-1">Jira</div>
+                <div class="text-zinc-400">Tickets and acceptance criteria. The agent can pull Jira context when implementing a feature described in a ticket.</div>
               </div>
             </div>
           </div>
 
-          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5 text-zinc-400 text-sm space-y-2">
-            <div class="text-zinc-200 font-medium text-sm mb-2">What it produces</div>
-            <div class="flex items-start gap-2"><span class="text-fuchsia-400">→</span> Branch + structured commit</div>
-            <div class="flex items-start gap-2"><span class="text-fuchsia-400">→</span> Per-step cost breakdown</div>
-            <div class="flex items-start gap-2"><span class="text-fuchsia-400">→</span> Full step-level audit trail</div>
-            <div class="flex items-start gap-2"><span class="text-fuchsia-400">→</span> Summary for PR description</div>
+          <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+            <div class="font-medium mb-3">Chat features</div>
+            <ul class="space-y-2 text-zinc-400 text-sm">
+              <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Streaming answers (SSE) with full markdown rendering</li>
+              <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Source disclosure per message — file path, section, similarity score</li>
+              <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Thread context: long conversations are summarized and reinjected to stay within token limits</li>
+              <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Per-message and per-thread USD cost tracked and displayed</li>
+              <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Spawn an agent task from chat — "implement this" creates a task on the fly</li>
+              <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> File attachments (S3) — attach specs, screenshots, or reference docs to your task</li>
+            </ul>
           </div>
         </div>
-      </div>
 
-      <!-- Agent features grid -->
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Complexity-aware budgets</div>
-          <div class="mt-2 text-zinc-400 text-sm">The planning phase estimates complexity and sets a dynamic step limit — small fixes don't burn large budgets.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Sandboxed execution</div>
-          <div class="mt-2 text-zinc-400 text-sm">All file operations and commands run inside an isolated sandbox. Nothing touches your environment without explicit promotion.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Cost transparency</div>
-          <div class="mt-2 text-zinc-400 text-sm">Per-step token usage and USD cost visible throughout the run. Final cost reported on every completed task.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Human-in-the-loop questions</div>
-          <div class="mt-2 text-zinc-400 text-sm">The agent pauses and asks when it needs clarification — then resumes exactly where it left off.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Structured commit output</div>
-          <div class="mt-2 text-zinc-400 text-sm">Branch suffix, commit title, body, and summary — ready to open a PR with no manual cleanup.</div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Review Bot handoff</div>
-          <div class="mt-2 text-zinc-400 text-sm">Agent-generated PRs flow straight into Review Bot — the same rules and ADRs apply, closing the loop.</div>
+        <div class="lg:col-span-4 space-y-4">
+          <div class="rounded-3xl bg-zinc-900 ring-1 ring-white/10 p-5 text-xs font-mono">
+            <div class="text-zinc-500 mb-3">Chat with your codebase</div>
+            <div class="space-y-3">
+              <div class="bg-zinc-800/60 rounded-2xl p-3 text-zinc-300">
+                Where is payment error handling currently implemented?
+              </div>
+              <div class="bg-zinc-950/60 rounded-2xl p-3 space-y-2">
+                <div class="text-zinc-200">The primary handler is in <span class="text-emerald-300">src/payments/handler.ts</span> (lines 42–89). Error types are defined in <span class="text-emerald-300">src/payments/errors.ts</span>.</div>
+                <div class="mt-2 pt-2 border-t border-white/10 text-zinc-500">
+                  <div>Sources: src/payments/handler.ts (0.94)</div>
+                  <div>src/payments/errors.ts (0.87)</div>
+                  <div>ADR-041-error-schema.md (0.81)</div>
+                </div>
+              </div>
+              <div class="bg-zinc-800/60 rounded-2xl p-3 text-zinc-300">
+                Implement a missing case for network timeouts.
+              </div>
+              <div class="bg-zinc-950/60 rounded-2xl p-3 text-zinc-400">
+                Creating task on <span class="text-zinc-200">David's Mac</span>…
+                <div class="mt-1 text-emerald-300">→ Task created · Session #47</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Why Eolentis (Differentiation) -->
-  <section id="why" class="relative z-10 border-t border-white/5">
+  <!-- LLM flexibility -->
+  <section class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
-      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-        <div>
-          <h2 class="text-3xl font-semibold tracking-tight">Why Eolentis</h2>
-          <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-            Many tools can comment on code or generate a PR. Eolentis is built to deliver <span class="text-white">high-signal</span> review and <span class="text-white">RAG-grounded execution</span> in
-            <span class="text-white">regulated, interconnected</span> codebases, where you need traceability, not vibes.
-          </p>
+      <h2 class="text-3xl font-semibold tracking-tight">Any LLM, per phase</h2>
+      <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
+        Each of the three agent phases — planning, execution, review — uses its own independently configured model. Mix providers across phases, or route everything to a local model when your data must never leave your network.
+      </p>
+
+      <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium mb-3">OpenAI</div>
+          <pre class="text-xs text-zinc-400 font-mono leading-relaxed"><code>LLM_MODEL_PLANNING=gpt-4o
+LLM_MODEL_EXECUTION=gpt-4o-mini
+LLM_MODEL_REVIEW=gpt-4o</code></pre>
+          <div class="mt-3 text-zinc-500 text-xs">gpt-4o-mini for execution is ~16× cheaper and handles mechanical edits well.</div>
         </div>
-        <div class="text-sm text-zinc-400 lg:text-right">
-          <div class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 px-4 py-3">
-            <span class="text-zinc-200 font-medium">Positioning:</span> Audit-ready AI governance for regulated teams
-          </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium mb-3">Anthropic Claude</div>
+          <pre class="text-xs text-zinc-400 font-mono leading-relaxed"><code>LLM_MODEL_PLANNING=claude-opus-4-6
+LLM_MODEL_EXECUTION=claude-haiku-4-5
+LLM_MODEL_REVIEW=claude-sonnet-4-6</code></pre>
+          <div class="mt-3 text-zinc-500 text-xs">Models starting with <code class="text-zinc-400">claude-</code> are auto-routed to the Anthropic provider — no extra config.</div>
+        </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+          <div class="font-medium mb-3">Local (Ollama / LM Studio)</div>
+          <pre class="text-xs text-zinc-400 font-mono leading-relaxed"><code>LLM_BASE_URL=http://localhost:11434/v1
+LLM_MODEL_PLANNING=qwen2.5-coder:32b
+LLM_MODEL_EXECUTION=qwen2.5-coder:14b</code></pre>
+          <div class="mt-3 text-zinc-500 text-xs">Set <code class="text-zinc-400">LLM_BASE_URL</code> and all phases route to your local endpoint. Costs tracked as $0.</div>
         </div>
       </div>
 
-      <div class="mt-10 grid md:grid-cols-3 lg:grid-cols-5 gap-6">
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Diff-first by design</div>
-          <div class="mt-2 text-zinc-400 text-sm">
-            Reviews what changed and what it impacts. No repo-wide essays. Less noise, faster approvals.
-          </div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">RAG, not guesswork</div>
-          <div class="mt-2 text-zinc-400 text-sm">
-            Context retrieved from your actual knowledge base — ADRs, policies, codebase — not inferred from training data.
-          </div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Traceable to your sources</div>
-          <div class="mt-2 text-zinc-400 text-sm">
-            Findings and agent actions map back to guidelines, ADRs, and policies — enabling audit-friendly decisions.
-          </div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Regulated-first deployments</div>
-          <div class="mt-2 text-zinc-400 text-sm">
-            Runs behind VPN and on-prem with optional local models. Built for bank-grade constraints.
-          </div>
-        </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Scale senior-level work</div>
-          <div class="mt-2 text-zinc-400 text-sm">
-            Automate routine governance checks and implementation tasks, so senior engineers focus on decisions that matter.
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-10 grid lg:grid-cols-12 gap-6">
-        <div class="lg:col-span-7 rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">High-signal review, not generic checklists</div>
-          <p class="mt-3 text-zinc-400 text-sm leading-relaxed">
-            Best practices are applied in two layers: universal engineering standards (security, error handling, validation,
-            backward compatibility, performance, readability) plus your internal rules (coding standards, ADRs, compliance docs).
-            RAG retrieval ensures context is pulled from your actual knowledge base, not generated from scratch.
-            The bot explains <span class="text-zinc-200">why each point matters here</span>, in this diff, for this change.
-          </p>
-        </div>
-        <div class="lg:col-span-5 rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">What teams typically measure</div>
-          <ul class="mt-3 space-y-2 text-zinc-400 text-sm list-disc list-inside">
-            <li>Review cycle time (time to approval)</li>
-            <li>Policy violations caught pre-merge</li>
-            <li>Reduction in "review noise" comments</li>
-            <li>Agent task cost per feature delivered</li>
-            <li>Production incidents linked to missed checks</li>
-          </ul>
-        </div>
+      <div class="mt-6 rounded-3xl bg-zinc-900/40 ring-1 ring-white/10 p-5 text-sm text-zinc-400">
+        <span class="text-zinc-200 font-medium">Mix providers across phases:</span> use Claude Opus for planning, GPT-4o-mini for execution, Claude Sonnet for review — or any combination. The platform resolves each phase independently from environment variables.
       </div>
     </div>
   </section>
@@ -459,62 +520,66 @@ if (!isValidCustomerType(req.customerType)) {
   <!-- How it works -->
   <section id="how" class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
-      <h2 class="text-3xl font-semibold tracking-tight">How it works</h2>
-      <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-        Designed for regulated teams: explainable, traceable, and deployable behind a VPN.
-      </p>
+      <h2 class="text-3xl font-semibold tracking-tight">How it all fits together</h2>
 
-      <div class="mt-6 text-sm font-medium text-zinc-300 mb-4">Review Bot</div>
-      <div class="grid lg:grid-cols-4 gap-6">
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 01</div>
-          <div class="mt-2 font-medium">Read the diff</div>
-          <div class="mt-2 text-zinc-400">Analyze the changed lines and immediate impact.</div>
+      <div class="mt-8 text-sm font-medium text-zinc-300 mb-4">Agent Platform — task lifecycle</div>
+      <div class="grid lg:grid-cols-5 gap-4">
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 01</div>
+          <div class="font-medium text-sm">Create a task</div>
+          <div class="mt-1 text-zinc-400 text-xs">Write a prompt, attach files if needed, pick an agent node (local machine or cloud).</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 02</div>
-          <div class="mt-2 font-medium">RAG context retrieval</div>
-          <div class="mt-2 text-zinc-400">Pull only the definitions, ADRs, and policies required to validate the change.</div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 02</div>
+          <div class="font-medium text-sm">Plan</div>
+          <div class="mt-1 text-zinc-400 text-xs">Agent estimates complexity, sets step budget, queries RAG for relevant context.</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 03</div>
-          <div class="mt-2 font-medium">Apply rules & ADRs</div>
-          <div class="mt-2 text-zinc-400">Enforce internal guidelines and architecture decisions, plus general best practices.</div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 03</div>
+          <div class="font-medium text-sm">Execute</div>
+          <div class="mt-1 text-zinc-400 text-xs">Read, write, patch files. Run tests and commands. Each step logged with cost.</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 04</div>
-          <div class="mt-2 font-medium">Deliver actionable output</div>
-          <div class="mt-2 text-zinc-400">Prioritized findings with patches/snippets and confidence markers.</div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 04</div>
+          <div class="font-medium text-sm">Self-review &amp; commit</div>
+          <div class="mt-1 text-zinc-400 text-xs">Reviews its own diff, produces structured commit: branch, title, body, summary.</div>
+        </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 05</div>
+          <div class="font-medium text-sm">PR → Review Bot</div>
+          <div class="mt-1 text-zinc-400 text-xs">The generated PR triggers Review Bot. Same RAG, same rules. Loop closed.</div>
         </div>
       </div>
 
-      <div class="mt-10 text-sm font-medium text-zinc-300 mb-4">Agent Platform</div>
-      <div class="grid lg:grid-cols-5 gap-6">
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 01</div>
-          <div class="mt-2 font-medium">Plan the task</div>
-          <div class="mt-2 text-zinc-400">Estimate complexity, set step budget, identify files to create or modify.</div>
+      <div class="mt-10 text-sm font-medium text-zinc-300 mb-4">Review Bot — Jenkins integration</div>
+      <div class="grid lg:grid-cols-4 gap-4">
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 01</div>
+          <div class="font-medium text-sm">Jenkins calls the API</div>
+          <div class="mt-1 text-zinc-400 text-xs">POST /api/review with mode=pr or mode=branch. Authenticated via x-internal-secret.</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 02</div>
-          <div class="mt-2 font-medium">RAG retrieval</div>
-          <div class="mt-2 text-zinc-400">Query internal docs, ADRs, and codebase context before writing a single line.</div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 02</div>
+          <div class="font-medium text-sm">Fetch diff + RAG</div>
+          <div class="mt-1 text-zinc-400 text-xs">Pulls the diff, retrieves ADRs and policies relevant to the changed code.</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 03</div>
-          <div class="mt-2 font-medium">Execute in sandbox</div>
-          <div class="mt-2 text-zinc-400">Write files, run tests, iterate — isolated from your environment.</div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 03</div>
+          <div class="font-medium text-sm">Apply rules</div>
+          <div class="mt-1 text-zinc-400 text-xs">Universal best practices + your internal ADRs and compliance docs.</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 04</div>
-          <div class="mt-2 font-medium">Validate & complete</div>
-          <div class="mt-2 text-zinc-400">Structured commit output with branch, title, body, and task summary.</div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="text-xs text-zinc-500 mb-2">Step 04</div>
+          <div class="font-medium text-sm">Post structured findings</div>
+          <div class="mt-1 text-zinc-400 text-xs">Must fix / Should fix / Nit with patches and confidence. Posted directly to the PR.</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="text-sm text-zinc-400">Step 05</div>
-          <div class="mt-2 font-medium">Review Bot handoff</div>
-          <div class="mt-2 text-zinc-400">The generated PR enters Review Bot — same rules, closed loop.</div>
-        </div>
+      </div>
+
+      <div class="mt-10 rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
+        <div class="font-medium mb-3">Self-healing</div>
+        <p class="text-zinc-400 text-sm leading-relaxed">
+          When a task fails, the platform automatically spawns a fix task. The planning phase analyzes the failure, the original steps, and the error message to produce a targeted remediation prompt — then re-queues the task. Sensitive fields (tokens, API keys) are redacted from the failure context before analysis.
+        </p>
       </div>
     </div>
   </section>
@@ -522,58 +587,56 @@ if (!isValidCustomerType(req.customerType)) {
   <!-- Security -->
   <section id="security" class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
-      <h2 class="text-3xl font-semibold tracking-tight">Security & deployment</h2>
+      <h2 class="text-3xl font-semibold tracking-tight">Security &amp; deployment</h2>
       <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-        Built for banks and regulated environments. Choose the deployment model that matches your risk appetite.
+        Built for regulated environments: multi-tenant with per-tenant API key isolation, deployable entirely behind VPN, and compatible with local LLMs so your code never reaches an external API.
       </p>
 
       <div class="mt-10 grid md:grid-cols-2 gap-6">
         <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">On-prem / behind VPN</div>
-          <ul class="mt-3 space-y-2 text-zinc-400 text-sm list-disc list-inside">
-            <li>Run inside your network perimeter</li>
-            <li>Option for local model providers</li>
-            <li>Designed for enterprise governance</li>
-            <li><span class="text-zinc-200">RAG runs internally:</span> your docs never leave your perimeter</li>
-            <li><span class="text-zinc-200">Minimal-context analysis:</span> only fetches related code when needed</li>
+          <div class="font-medium mb-3">On-prem / behind VPN</div>
+          <ul class="space-y-2 text-zinc-400 text-sm">
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Runs entirely inside your network perimeter</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Local LLMs (Ollama, LM Studio) — code stays on-prem</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> RAG (Qdrant) runs locally — your docs never leave</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Minimal context analysis — only fetches related code when the agent needs it</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Worker-to-API auth via Bearer tokens (masked in responses)</li>
           </ul>
         </div>
         <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Cloud (managed)</div>
-          <ul class="mt-3 space-y-2 text-zinc-400 text-sm list-disc list-inside">
-            <li>Fast onboarding for less restricted teams</li>
-            <li>Centralized rule management</li>
-            <li>Audit-ready outputs and traceability</li>
-            <li><span class="text-zinc-200">Minimal-context analysis:</span> reduces exposure and review noise</li>
+          <div class="font-medium mb-3">Multi-tenant architecture</div>
+          <ul class="space-y-2 text-zinc-400 text-sm">
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Per-tenant API keys stored and masked in the database</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Per-tenant Qdrant collections — data isolated by tenant</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Per-tenant GitHub token for cloud worker git operations</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Per-tenant rate limiting (coming)</li>
+            <li class="flex items-start gap-2"><span class="text-emerald-400 mt-0.5">✓</span> Deployed on Railway with PostgreSQL, Redis, Qdrant</li>
           </ul>
-          <div class="mt-4 text-xs text-zinc-500">
-            Compliance requirements vary. We'll align deployment, access, and controls during the pilot.
-          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Integrations -->
-  <section id="integrations" class="relative z-10 border-t border-white/5">
+  <section class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
-      <h2 class="text-3xl font-semibold tracking-tight">Plays well with your stack</h2>
-      <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-        Pull request review and agent tasks in Git, RAG context from your docs and tickets, notifications where teams actually live.
-      </p>
-
-      <div class="mt-10 grid md:grid-cols-3 gap-6 text-sm">
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Git</div>
-          <div class="mt-2 text-zinc-400">GitHub • GitLab • Azure DevOps • Bitbucket</div>
+      <h2 class="text-3xl font-semibold tracking-tight">Integrations</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-5 text-sm">
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="font-medium mb-2">Git</div>
+          <div class="text-zinc-400">GitHub · GitLab · Azure DevOps · Bitbucket</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Docs & rules (RAG sources)</div>
-          <div class="mt-2 text-zinc-400">Confluence • SharePoint • ADR repositories • internal wikis</div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="font-medium mb-2">CI/CD</div>
+          <div class="text-zinc-400">Jenkins (review + coverage gate)</div>
         </div>
-        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
-          <div class="font-medium">Tickets & chat</div>
-          <div class="mt-2 text-zinc-400">Jira • Slack • Microsoft Teams</div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="font-medium mb-2">Docs &amp; tickets</div>
+          <div class="text-zinc-400">Confluence · Jira · internal wikis · ADR repositories</div>
+        </div>
+        <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-5">
+          <div class="font-medium mb-2">LLM providers</div>
+          <div class="text-zinc-400">OpenAI · Anthropic · Ollama · LM Studio · any OpenAI-compatible endpoint</div>
         </div>
       </div>
     </div>
@@ -584,41 +647,44 @@ if (!isValidCustomerType(req.customerType)) {
     <div class="mx-auto max-w-6xl px-6 py-16">
       <h2 class="text-3xl font-semibold tracking-tight">Pricing</h2>
       <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-        Enterprise-first. Priced for regulated teams, complex codebases, and real support needs.
+        Enterprise-first. Priced for regulated teams and complex codebases, with real support included.
       </p>
 
       <div class="mt-10 grid lg:grid-cols-3 gap-6">
         <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
           <div class="text-sm text-zinc-400">Pilot</div>
           <div class="mt-2 text-xl font-semibold">Proof of Value</div>
-          <div class="mt-3 text-zinc-400 text-sm">Validate signal quality on 1–2 repositories with your rules and ADRs.</div>
+          <div class="mt-3 text-zinc-400 text-sm">Validate Review Bot on 1–2 repos with your ADRs and coding standards.</div>
           <ul class="mt-4 space-y-2 text-zinc-400 text-sm list-disc list-inside">
-            <li>PR review bot in CI/CD</li>
-            <li>Rule ingestion (guidelines + ADRs)</li>
-            <li>Success metrics & reporting</li>
+            <li>PR review bot in Jenkins CI</li>
+            <li>RAG ingestion (guidelines + Confluence + ADRs)</li>
+            <li>Coverage gate setup</li>
+            <li>Success metrics reporting</li>
           </ul>
         </div>
 
         <div class="rounded-3xl bg-zinc-900 ring-1 ring-white/20 p-6">
           <div class="text-sm text-zinc-300">Enterprise</div>
           <div class="mt-2 text-xl font-semibold">Annual License</div>
-          <div class="mt-3 text-zinc-300 text-sm">Scale across teams with centralized rule management and audit-ready outputs.</div>
+          <div class="mt-3 text-zinc-300 text-sm">Full platform: agents, review bot, RAG chat, multi-tenant, on-prem.</div>
           <ul class="mt-4 space-y-2 text-zinc-300 text-sm list-disc list-inside">
-            <li>Multi-team rollout</li>
-            <li>Audit trail & governance</li>
-            <li>On-prem / VPN deployments</li>
-            <li>Agent Platform access</li>
+            <li>Agent Platform — local + cloud nodes</li>
+            <li>Review Bot with memory mode</li>
+            <li>RAG Chat per project</li>
+            <li>Multi-tenant + audit trail</li>
+            <li>On-prem / VPN deployment</li>
+            <li>Local LLM support</li>
           </ul>
         </div>
 
         <div class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6">
           <div class="text-sm text-zinc-400">Add-ons</div>
-          <div class="mt-2 text-xl font-semibold">Usage & Extensions</div>
-          <div class="mt-3 text-zinc-400 text-sm">Advanced automation when you want the bot to do more than comment.</div>
+          <div class="mt-2 text-xl font-semibold">Usage &amp; Extensions</div>
+          <div class="mt-3 text-zinc-400 text-sm">Scale agent task volume and extend with custom integrations.</div>
           <ul class="mt-4 space-y-2 text-zinc-400 text-sm list-disc list-inside">
-            <li>Agent Platform task volume</li>
-            <li>Test generation & validation</li>
-            <li>Automated patch proposals</li>
+            <li>Agent task volume packs</li>
+            <li>Additional agent nodes</li>
+            <li>Custom RAG ingestion sources</li>
             <li>Custom policy packs</li>
           </ul>
         </div>
@@ -627,84 +693,81 @@ if (!isValidCustomerType(req.customerType)) {
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="relative z-10 border-t border-white/5">
+  <section class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
       <h2 class="text-3xl font-semibold tracking-tight">FAQ</h2>
-      <p class="mt-4 text-zinc-300 max-w-3xl leading-relaxed">
-        The practical questions everyone asks before they let a bot comment on — or write — production-critical code.
-      </p>
 
       <div class="mt-10 grid lg:grid-cols-2 gap-6">
         <details class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6 group">
           <summary class="cursor-pointer list-none flex items-center justify-between gap-4">
-            <span class="font-medium">How do you reduce hallucinations?</span>
+            <span class="font-medium">Can the agent run on my local machine?</span>
             <span class="text-zinc-500 group-open:rotate-180 transition-transform">▾</span>
           </summary>
           <div class="mt-3 text-zinc-400 text-sm leading-relaxed">
-            Both the Review Bot and Agent Platform are diff-first and RAG-grounded. Rather than generating context from scratch, they retrieve targeted information from your actual codebase and internal docs. Findings include confidence markers and explicit "what to verify" notes when retrieved context may be incomplete.
+            Yes. Register your machine in the UI, download the generated installer script, and run it. The local daemon connects to the shared Redis queue, picks up tasks assigned to your node, and works directly on your local filesystem. You can map multiple repositories to explicit local paths using REPO_MAPPINGS.
           </div>
         </details>
 
         <details class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6 group">
           <summary class="cursor-pointer list-none flex items-center justify-between gap-4">
-            <span class="font-medium">Can it enforce our internal ADRs and policies?</span>
+            <span class="font-medium">How does the three-phase agent loop work?</span>
             <span class="text-zinc-500 group-open:rotate-180 transition-transform">▾</span>
           </summary>
           <div class="mt-3 text-zinc-400 text-sm leading-relaxed">
-            Yes. Eolentis ingests organization-specific sources (coding guidelines, ADRs, compliance docs) into the RAG layer. Both the Review Bot and Agent Platform query this knowledge base at runtime, and map findings or actions back to those sources to support governance and auditability.
+            Planning phase estimates complexity and sets a step budget. Execution phase runs the tool-call loop (read, write, patch, run commands, RAG queries) until tests pass or the budget is exhausted. Review phase then reviews the final diff and produces a structured commit. Each phase can use a different LLM — e.g. a powerful model for planning and a cheap fast model for execution.
           </div>
         </details>
 
         <details class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6 group">
           <summary class="cursor-pointer list-none flex items-center justify-between gap-4">
-            <span class="font-medium">Does it run behind VPN or fully on-prem?</span>
+            <span class="font-medium">What happens when an agent task fails?</span>
             <span class="text-zinc-500 group-open:rotate-180 transition-transform">▾</span>
           </summary>
           <div class="mt-3 text-zinc-400 text-sm leading-relaxed">
-            Yes. We support on-prem / behind-VPN deployments, including RAG running entirely within your network perimeter. We can align the setup to your environment constraints during the pilot.
+            Self-healing kicks in automatically. The platform analyzes the failed steps and error message, generates a remediation prompt (with sensitive values redacted), and re-queues a fix task. You can also review the full step trace in the UI to understand exactly what went wrong.
           </div>
         </details>
 
         <details class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6 group">
           <summary class="cursor-pointer list-none flex items-center justify-between gap-4">
-            <span class="font-medium">What does a pilot look like?</span>
+            <span class="font-medium">How does Review Bot integrate with Jenkins?</span>
             <span class="text-zinc-500 group-open:rotate-180 transition-transform">▾</span>
           </summary>
           <div class="mt-3 text-zinc-400 text-sm leading-relaxed">
-            Typically: (1) connect 1–2 repos, (2) ingest key guidelines/ADRs into the RAG layer, (3) run the bot on real PRs, (4) review measured outcomes like cycle time and policy violations caught pre-merge.
+            Add a Jenkins stage that POSTs to <code class="text-zinc-200 bg-zinc-800 px-1 rounded">/api/review</code> with the branch, PR URL, and mode (pr or branch). The endpoint always returns HTTP 200 so Jenkins never fails on a review error. For coverage, call <code class="text-zinc-200 bg-zinc-800 px-1 rounded">/api/coverage-gate</code> after your test run and pass the coverage-summary.json data — the bot flags files below your threshold and can trigger agent tasks to write missing tests.
           </div>
         </details>
 
         <details class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6 group">
           <summary class="cursor-pointer list-none flex items-center justify-between gap-4">
-            <span class="font-medium">What can the Agent Platform actually do?</span>
+            <span class="font-medium">Can we use a local LLM to keep code off external APIs?</span>
             <span class="text-zinc-500 group-open:rotate-180 transition-transform">▾</span>
           </summary>
           <div class="mt-3 text-zinc-400 text-sm leading-relaxed">
-            It takes a task description, plans an implementation, retrieves relevant context via RAG, writes and validates code in a sandbox, then produces a structured commit ready to open a PR. It can ask clarifying questions mid-run and provides full per-step cost visibility. Agent-generated PRs are then reviewed by Review Bot automatically.
+            Yes. Set LLM_BASE_URL to any OpenAI-compatible endpoint (Ollama, LM Studio, vLLM, etc.) and all agent phases route to your local model. Combined with the local agent daemon and an on-prem Qdrant instance, your code, docs, and inference can all stay within your network perimeter.
           </div>
         </details>
 
         <details class="rounded-3xl bg-zinc-900/60 ring-1 ring-white/10 p-6 group">
           <summary class="cursor-pointer list-none flex items-center justify-between gap-4">
-            <span class="font-medium">Will this replace human reviewers or engineers?</span>
+            <span class="font-medium">Does RAG Chat replace the agent for code questions?</span>
             <span class="text-zinc-500 group-open:rotate-180 transition-transform">▾</span>
           </summary>
           <div class="mt-3 text-zinc-400 text-sm leading-relaxed">
-            No. Review Bot reduces bottlenecks by handling routine governance checks consistently. The Agent Platform handles well-scoped implementation tasks, not architectural decisions. Humans keep ownership of final approval, direction, and anything that requires judgment beyond what the RAG-grounded context can resolve.
+            They complement each other. RAG Chat is for interactive questions about the codebase — fast, streaming, with cited sources. When the answer leads to "let's implement this", you can spawn an agent task directly from the chat thread. The agent then has access to the same RAG context used to answer the question.
           </div>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- CTA / Contact -->
+  <!-- CTA -->
   <section id="contact" class="relative z-10 border-t border-white/5">
     <div class="mx-auto max-w-6xl px-6 py-16">
       <div class="rounded-3xl bg-gradient-to-r from-indigo-500/15 via-fuchsia-500/15 to-cyan-500/15 ring-1 ring-white/10 p-8">
         <h2 class="text-3xl font-semibold tracking-tight">Get an enterprise demo</h2>
         <p class="mt-3 text-zinc-300 max-w-2xl leading-relaxed">
-          Send us your coding guidelines and a couple of ADRs. We'll run a pilot on your repos and show you what high-signal, RAG-grounded review looks like in practice.
+          Send us a couple of ADRs and your coding standards. We'll run Review Bot on your repos and spin up the agent platform — and show you exactly what grounded AI assistance looks like in your codebase.
         </p>
 
         <div class="mt-6 flex flex-col sm:flex-row gap-3">
@@ -712,7 +775,7 @@ if (!isValidCustomerType(req.customerType)) {
             hello@eolentislabs.com
           </a>
           <a href="#" class="inline-flex justify-center px-5 py-3 rounded-xl bg-zinc-950/60 ring-1 ring-white/10 hover:bg-zinc-950 text-zinc-100">
-            Download one-page (soon)
+            Download one-pager (soon)
           </a>
         </div>
 
